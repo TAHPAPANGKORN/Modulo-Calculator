@@ -1,1 +1,1 @@
-this is a Modulo Calculator how learn tkinter 
+This is a Modulo Calculator for learn tkinter 
