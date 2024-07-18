@@ -6,7 +6,7 @@ def mod():
     usernumber = float(userinput_number.get())
     usernumber2 = float(userinput_number2.get())
     result_label.config(text="หารได้ = %f" %(usernumber / usernumber2))
-    result_label2.config(text="หารเอาเศษได้ = %.1f" %(usernumber % usernumber2))
+    result_label2.config(text="หารเอาเศษได้ = %d" %(usernumber % usernumber2))
              
 def on_entry_click(event):
     if userinput_number.get() == "ตัวตั้ง":
