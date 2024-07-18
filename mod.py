@@ -9,10 +9,10 @@ def mod():
     result_label2.config(text="หารเอาเศษได้ = %.1f" %(usernumber % usernumber2))
              
 def on_entry_click(event):
-    if userinput_number.get() == "เลขที่ต้องการหาร mod":
+    if userinput_number.get() == "ตัวตั้ง":
         userinput_number.delete(0, "end")
 def on_entry_click2(event):
-    if userinput_number2.get() == "ตัวหารหา mod":
+    if userinput_number2.get() == "ตัวหาร":
         userinput_number2.delete(0, "end") 
 
 root = tk.Tk()
@@ -23,17 +23,17 @@ userinput_number_label = tk.Label(root, text="เครื่องคำนว�
 userinput_number_label.pack()
 
 userinput_number = tk.Entry(root,textvariable=tk.StringVar())
-userinput_number.insert(0, "เลขที่ต้องการหาร mod")
+userinput_number.insert(0, "ตัวตั้ง")
 userinput_number.bind("<FocusIn>", on_entry_click)
 userinput_number.pack()
 
 userinput_number2 = tk.Entry(root,textvariable=tk.StringVar())
-userinput_number2.insert(0, "ตัวหารหา mod")
+userinput_number2.insert(0, "ตัวหาร")
 userinput_number2.bind("<FocusIn>", on_entry_click2)
 userinput_number2.pack()
 
 calculate_button = tk.Button(root, text="Calculate", command=mod,bg="green",fg="white") 
-calculate_button.pack(side="bottom", pady=20) 
+calculate_button.pack(side="bottom", pady=20)
 
 result_label2 = tk.Label(root, text="")
 result_label2.pack(side="bottom")
